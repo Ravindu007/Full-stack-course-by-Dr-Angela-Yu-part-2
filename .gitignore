@@ -1,5 +1,13 @@
 /express-server/node_modules
+
 /calculatorApp/node_modules
+
 /BMI-APP/node_modules
+
 /API-module/API-weatherApp/WeatherApp/node_modules
 /API-module/API-weatherApp/backend/node_modules
+
+/API-module/NewsLeterAPI/frontend/node_modules
+/API-module/NewsLeterAPI/backend/node_modules
+
+/API-module/NewsLeterAPI/backend/.env
