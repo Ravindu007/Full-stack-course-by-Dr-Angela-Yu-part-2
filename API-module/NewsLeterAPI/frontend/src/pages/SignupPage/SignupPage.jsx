@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react'
+import {useNavigate} from "react-router-dom"
 import "./SignupPage.scss"
 
 const SignupPage = () => {
+  const navigate = useNavigate()
 
   // input field states
   const [firstName, setFirstName] = useState("")
@@ -23,7 +25,11 @@ const SignupPage = () => {
     const json = await response.json()
 
     if(response.ok){
-      console.log(json);
+      if(json.msg === "ok"){
+        navigate("/success")
+      }else{
+        navigate("/faliure")
+      }
     }
   }
 

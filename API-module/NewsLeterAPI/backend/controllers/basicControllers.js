@@ -31,7 +31,7 @@ const getAllData = async(req, res) => {
   const json = await response.json()
 
   if(response.ok){
-    res.status(200).json(json)
+    res.status(200).json({msg:"ok"})
   }
 }
 
